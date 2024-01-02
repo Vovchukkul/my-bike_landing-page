@@ -13,14 +13,14 @@
   &__photos {
     @include pageGrid;
     margin-bottom: 16px;
-    transition: all 0.5s linear;
-
-    &:hover {
-      transform: scale(103%);
-    }
   }
 
   &__link {
+    transition: all 0.5s linear;
+    &:hover {
+      transform: scale(103%);
+    }
+
     position: relative;
     &--wide {
       @include onTablet {

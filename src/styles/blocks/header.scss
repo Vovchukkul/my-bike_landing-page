@@ -3,6 +3,10 @@
   background-size: cover;
   background-position: 75%;
 
+  @include onTablet {
+    background-position: 50%;
+  }
+
   &__content {
     height: 100vh;
 
@@ -18,22 +22,27 @@
     line-height: 36px;
     letter-spacing: -1.5px;
     font-family: "Poppins", sans-serif;
+    margin-top: -88px;
 
     @include onTablet {
       line-height: 64px;
       font-size: 64px;
       text-align: center;
+      margin-top: -130px;
     }
 
     @include onDesktop {
       line-height: 80px;
       text-align: center;
       font-size: 80px;
+      margin-top: -203px;
     }
   }
 
   &__bottom {
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
 
     @include onTablet {
       padding-bottom: 64px;
